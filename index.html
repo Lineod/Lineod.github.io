@@ -1,21 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My First Website</title>
-    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
 
 <body><!--the visible part: in body-->
     <header>
-        <h1>Hello, world!</h1>
+        <h1 title="I'm a tooltip">Hello, world!</h1>
         <h2>This is heading 2</h2>
         <h3>This is heading 3</h3>
         <p>This site is built with HTML and CSS.</p>
     </header>
     <main>
+        <nav>
+            <a href="/html/">HTML</a> |
+            <a href="/css/">CSS</a> |
+            <a href="/js/">JavaScript</a> |
+            <a href="/jquery/">jQuery</a>
+        </nav>
+        <h2>Introduction</h2>
+        <article class="card" id="intro">
+            <h2>Welcome</h2>
+            <p>Learning HTML and CSS together unlocks creative freedom.</p>
+        </article>
         <section>
             <h2>About Me</h2>
             <p>I am learning how to code websites from scratch.</p>
@@ -33,6 +44,25 @@
                 <li>Product showcase</li>
                 <li>Responsive blog layout</li>
             </ul>
+        </section>
+        <section>
+            <h2>Experiments for aside</h2>
+            <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had
+                a great summer together with my family!</p>
+
+            <aside>
+                <h4>Epcot Center</h4>
+                <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international
+                    pavilions, award-winning fireworks and seasonal special events.</p>
+            </aside>
+        </section>
+        <section>
+            <h2>This part is for the games I'm playing</h2>
+            <figure>
+                <img src="https://cdn.jsdelivr.net/gh/Lineod/wiki_assets/personal_website/images/roundandround.gif"
+                    alt="mybelt">
+                <figcaption>Fig1. - heyiwei.</figcaption>
+            </figure>
         </section>
     </main>
     <footer>
