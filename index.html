@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My First Website</title>
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/stylesforhome.css" type="text/css">
 </head>
 
 <body><!--the visible part: in body-->
@@ -16,17 +16,68 @@
         <p>This site is built with HTML and CSS.</p>
     </header>
     <main>
-        <nav>
-            <a href="/html/">HTML</a> |
-            <a href="/css/">CSS</a> |
-            <a href="/js/">JavaScript</a> |
-            <a href="/jquery/">jQuery</a>
+        <nav class="site-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="java_exp.html">JavaScript Fairground</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
         <h2>Introduction</h2>
         <article class="card" id="intro">
             <h2>Welcome</h2>
             <p>Learning HTML and CSS together unlocks creative freedom.</p>
+            <dl class="glossary">
+                <dt>HTML</dt>
+                <dd>Structure of a webpage.</dd>
+                <dt>CSS</dt>
+                <dd>Presentation and layout.</dd>
+            </dl>
+            <div class="table-wrapper">
+                <table class="pricing">
+                    <thead>
+                        <tr>
+                            <th scope="col">Plan</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Features</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Starter</th>
+                            <td>$0</td>
+                            <td>Basic components</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Pro</th>
+                            <td>$19</td>
+                            <td>Advanced layouts</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </article>
+        <ul class="features">
+            <li>Responsive layout</li>
+            <li>Semantic HTML</li>
+            <li>Accessible components</li>
+        </ul>
+        <ol class="steps">
+            <li>Plan content</li>
+            <li>Structure markup</li>
+            <li>Apply typography and layout</li>
+        </ol>
+        <section>
+            <h2>My First JavaScript</h2>
+            <button type="button" onclick="document.getElementById('time').innerHTML = Date()">
+                Click me to display Date and Time.</button>
+            <p id="time"></p>
+
+            <h2>What Can JavaScript Do?</h2>
+            <p id="demo">JavaScript can change HTML content.</p>
+            <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click
+                Me!</button>
+        </section>
         <section>
             <h2>About Me</h2>
             <p>I am learning how to code websites from scratch.</p>
@@ -67,6 +118,7 @@
     </main>
     <footer>
         <p>Built with ❤️ using HTML & CSS.</p>
+
     </footer>
 </body>
 

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My First Website</title>
+    <link rel="stylesheet" href="css/stylesforjava.css" type="text/css">
+</head>
+
+<body>
+
+    <h2>What Can JavaScript Do?</h2>
+
+    <p>JavaScript can change HTML attribute values.</p>
+
+    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+    <button
+        onclick="document.getElementById('myImage').src='https://cdn.jsdelivr.net/gh/Lineod/wiki_assets/personal_website/images/roundandround.gif'">Turn
+        on the light</button>
+
+    <img id="myImage" src="https://cdn.jsdelivr.net/gh/Lineod/wiki_assets/personal_website/images/catsmile.gif"
+        style="width:100px">
+
+    <button
+        onclick="document.getElementById('myImage').src='https://cdn.jsdelivr.net/gh/Lineod/wiki_assets/personal_website/images/catsmile.gif'">Turn
+        off the light</button>
+
+</body>
